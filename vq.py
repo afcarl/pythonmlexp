@@ -8,6 +8,10 @@
 Vector Quantization (VQ):
     https://www.willamette.edu/~gorr/classes/cs449/Unsupervised/competitive.html
     
+    Goal: method of clustering - divide the data into a number of clusters based on similarity.
+
+    Algorithm:
+    
     1. Choose the number of clusters M
     2. Initialize the prototypes w_1, ..., w_m (e.g. choose M random vectors from input data)
     3. Repeat until stopping criterion is satisfied 
