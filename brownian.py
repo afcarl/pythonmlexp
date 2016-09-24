@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+#title              : brownian.py
+#author             : Victor Mutai
+#date               : 20160923
+#version            : 0.1
+#license            : GNU
 """
 
 Brownian Motion:
