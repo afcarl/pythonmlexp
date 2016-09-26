@@ -32,13 +32,20 @@ Brownian Motion:
 import numpy as np
 import matplotlib.pyplot as plt
 
+def brownian_algo(T, N):
+
+    dt = T/N
+    t = np.arange(0,T+dt,dt)
+    
+    dW = np.sqrt(dt)*np.random.randn(1,N)
+    W = np.cumsum(dW)
+    W = np.append(np.array([0]), W)
+
+    return t, W
+
 T = 1.
 N = 1000
-dt = T/N
-dW = np.sqrt(dt)*np.random.randn(1,N)
-W = np.cumsum(dW)
-t = np.arange(0,T+dt,dt)
-W = np.append(np.array([0]), W)
+t, W = brownian_algo(T, N)
 
 plt.plot(t, W, '-')
 plt.show()
