@@ -8,8 +8,8 @@
 
 Brownian Motion:
     
-    Brownian motion over [0,T] is a r.v. W(t) that depends continuously
-    on t elem_of [0,T] and satisfies the following three conditions:
+    Brownian motion over [0,T] is a random variable (r.v.) W(t) that depends 
+    continuously on t elem_of [0,T] and satisfies the following three conditions:
     1. W(0) = 0 (with probability 1).
     2. For 0<=s<t<=T the r.v. given by the incremnt W(t)-W(s) is
         normally distr' with mean 0 and variance t-s; equivalently,

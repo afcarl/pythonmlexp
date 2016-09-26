@@ -5,6 +5,7 @@
 #version            : 0.1
 #license            : GNU
 """
+
 Vector Quantization (VQ):
     https://www.willamette.edu/~gorr/classes/cs449/Unsupervised/competitive.html
     
@@ -25,6 +26,7 @@ Vector Quantization (VQ):
             https://en.wikibooks.org/wiki/Artificial_Neural_Networks/Competitive_Learning
             
             This is called the std competitive learning rule
+
 """
 
 import numpy as np
@@ -51,7 +53,7 @@ plt.axis('equal')
 # Vector Quantization Algorithm
 
 M = 3 # choose no of clusters
-Nu = 0.2 # Competitive learning rate
+Nu = 0.1 # Competitive learning rate
 np.random.shuffle(data) # Randomize data
 W = data[0:M] # init prototypes from random data
 
